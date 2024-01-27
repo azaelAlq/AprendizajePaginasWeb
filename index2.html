@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--el nombre de la pestaña y el nombre cuando se busca en el navegador-->
+    <title>Portafolio de azael</title>
+
+    <!--pone la descripccion de la pagina cuado se busca en el navegador-->
+    <meta name="description" content="Primera pagina de azael en HTML">
+
+    <!--
+            Hay metadatos que son importantes cuando se comparte la pagina web
+            se usa open graph
+        -->
+    <!--esto es para darle color al navegador pero no funciona el edge-->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+
+    <!--el icono que aparece en la pestaña xd-->
+    <link rel="icon" type="image/jpg" href="imagenes/yo.jpg">
+
+    <style>
+        body {
+            background: rgb(36, 186, 197);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio de azael👍</h1>
+        <nav>
+            <a href="#participaciones">Participaciones</a>
+            <a href="#tecnologiasFav">Tecnologias favoritas</a>
+            <a href="https://www.youtube.com/@azaelalquicira3264" target="_blank" rel="noreferrer">Canal de youtube</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>azael <strong>esta aprediendo un nuevo leguaje de programacion</strong>
+            programador intermedio de java y quiere hacer muchas cosas
+            nuevas en vacaciones xd
+        </p>
+
+        <h2 id="participaciones">Participacion</h2>
+        <ul>
+            <li class="list-item"><strong>Inovatec 2023</strong></li>
+            <li class="list-item"><em>Inovatec 2024</em></li>
+            <li class="list-item">Inovatec 2025</li>
+            <li class="list-item">Inovatec 2026</li>
+            <li class="list-item">Inovatec 2027</li>
+        </ul>
+
+        <!--<img src="/imagenes/yo.jpg">-->
+
+        <!--
+            <input type="date">
+            <input type="range">
+            <input type="file">
+            -->
+        <!-- comentario aqui, la clave-->
+
+        <video src="video mp3 xd" controls></video>
+
+        <a download href="/imagenes/yo.jpg">
+            <img id="photo-image" title="Foto de azael" src="/imagenes/yo.jpg" alt="Una fotografia de azael alquicira "
+                width=250 height="300">
+        </a>
+        <br>
+        <a download href="/imagenes/yo.jpg">
+            <button>
+                soy ese
+            </button>
+        </a>
+
+        <h2>mis tecnologias favoritas</h2>
+
+        <aside>
+            <header>
+                <h3 id="tecnologiasFav">Mis tecnologia favoritas</h3>
+            </header>
+            <ol>
+                <li>html</li>
+                <li>JS</li>
+                <li>Java</li>
+            </ol>
+        </aside>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Cuál es tu política de devolución?</summary>
+                <p>Nuestra política de devolución permite devoluciones dentro de los 30 días posteriores a la compra,
+                    siempre y cuando el producto esté en condiciones originales y se presente el recibo de compra.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo puedo restablecer mi contraseña?</summary>
+                <p>Para restablecer tu contraseña, ve a la página de inicio de sesión y haz clic en "Olvidé mi
+                    contraseña".
+                    Te enviaremos un enlace de restablecimiento a tu dirección de correo electrónico registrada.</p>
+            </details>
+
+            <details>
+                <summary>¿Ofrecen soporte técnico?</summary>
+                <p>Sí, ofrecemos soporte técnico las 24 horas, los 7 días de la semana. Puedes comunicarte con nuestro
+                    equipo
+                    de soporte a través del chat en vivo en nuestro sitio web o llamando a nuestro número de soporte.
+                </p>
+            </details>
+        </section>
+
+
+        <section>
+            <article>
+                <header>
+                    <h4>sitio web corporativo</h4>
+                </header>
+                <p>
+                    desarrollo de un sitio web corportativo con una interfaz
+                    amigable y moderna
+                </p>
+                <footer>
+                    <small>
+                        juegos favoritos: minecraft, valorant, apex
+                    </small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h4>sitio web corporativo</h4>
+                </header>
+                <p>
+                    desarrollo de un sitio web corportativo con una interfaz
+                    amigable y moderna
+                </p>
+                <footer>
+                    <small>
+                        juegos favoritos: minecraft, valorant, apex
+                    </small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h4>sitio web corporativo</h4>
+                </header>
+                <p>
+                    desarrollo de un sitio web corportativo con una interfaz
+                    amigable y moderna
+                </p>
+                <footer>
+                    <small>
+                        juegos favoritos: minecraft, valorant, apex
+                    </small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+
+            <h2>Formulario de contacto </h2>
+
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" placeholder="Azael alquicira" required
+                            pattern="[a-z|A-Z ]">
+                    </div>
+
+                    <div>
+                        <label>
+                            Correo:
+                            <input type="email" name="correo" placeholder="ejemplo@gmai.com" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="enviar contacto">
+
+                <fieldset>
+                    <div>
+                        <label>
+                            telefono:
+                            <input type="tel" name="telefono" placeholder="735 *** *****">
+                        </label>
+
+                    </div>
+                    <div>
+                        <label>
+                            Fecha:
+                            <input type="date" name="fecha">
+                        </label>
+                    </div>
+                </fieldset>
+                <!--el boton esta adentro del formulario por lo que valida el formulario-->
+                <button> enviar contacto</button>
+            </form>
+
+            <div>
+                <datalist id="lenguajes">
+                    <option value="JS"></option>
+                    <option value="Java"></option>
+                    <option value="HTML"></option>
+                    <option value="Arduino"></option>
+                </datalist>
+                <label>
+                    ¿Con que lenguaje quiere que te ayude?
+                    <input list="lenguajes" name="lenguaje">
+                </label>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
