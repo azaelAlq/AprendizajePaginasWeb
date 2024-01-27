@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <title>Cafeteria del tec</title>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="imagenes/logo cafeteria final.png">
+    <style>
+
+        body{
+            background-color: rgb(30, 77, 30);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: beige;
+        }
+        main{
+            background-color: rgb(56, 91, 46);
+        }
+        footer{
+            background-color: beige;
+            color: darkslategrey;
+        }
+        
+        .Fondo_B{
+            color: rgb(80, 37, 37);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: beige;
+            font-size: 25px;
+        }
+        
+        #Saludo{
+            font-size:20px;
+        }
+        
+        #B_Enviar{
+            background-color:  chocolate;
+            color: beige;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <section class="Fondo_B">
+        <h1>
+            CAFETERIA DEL TECNOLOGICO NACIONAL DE MEXICO
+        </h1>
+        <img 
+        id="Logo_main"   
+        title="Logo" 
+        src="imagenes/logo cafeteria final.png" 
+        alt="Logo"
+        width="300"
+        height="300"
+    />
+    </section>
+        
+    <main>
+        <div>
+            <p id="Saludo">
+                ¡<strong>Bienvenidos a nuestra 
+                acogedora cafetería</strong>,un rincón delicioso y acogedor 
+                dentro del Tecnológico Nacional de México, 
+                Campus Cuautla!
+           </p>
+        </div>
+        
+        <div>
+            <h3>¿Qué hacemos?</h3>
+            <p>En nuestro establecimiento, nos enorgullece ofrecer a la comunidad tecnológica un espacio único donde pueden disfrutar de momentos relajantes, deliciosos aromas y sabores irresistibles.</p>
+        </div>
+        
+        <div>
+            <details>
+            <summary><strong>¿Qué vendemos?</strong></summary>
+            <p>
+            <h4>Comida</h4>
+            <ul>
+                <li>Tacos de arroz</li>
+                <li>Chilaquiles</li> 
+                <li>Tacos dorados</li>  
+                <li>Flautas</li> 
+                <li>Tortas</li>
+                <li>Quesadillas</li>
+                <li>Guisados </li>
+                <li>Pipián</li>
+                <li>Postres</li>
+                    
+            </ul>
+
+            <h4>Bebidas</h4>
+            <ul>
+                <li>Agua de Jamaica</li>
+            </ul>
+            </p>
+            </details>
+            <br>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div>
+            <p>¡Únete a nosotros en este emocionante viaje mientras creamos un espacio vibrante y lleno de vida dentro del Tecnológico Nacional de México, Campus Cuautla! </p>
+            <h3>Contactate con nosotros</h3>
+            
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Rellena con tu informacion personal</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" placeholder="Tu nombre" 
+                        required pattern="[a-z|A-Z ]">
+                    </div>
+
+                    <div>
+                        <label>
+                            Correo:  
+                            <input type="email" name="correo" placeholder="ejemplo@gmai.com"
+                            required>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label>
+                            Tu duda:  
+                            <input type="text" name="duda" placeholder="pregunta lo que quieras"
+                            required>
+                        </label>
+                    </div>                    
+                </fieldset>
+
+                <button id="B_Enviar" >Enviar</button>
+
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
